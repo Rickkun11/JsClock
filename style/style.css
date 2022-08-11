@@ -3,13 +3,26 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #f13636;
+    color: #0066ff;
     letter-spacing: 7px;
 
     font-size: 60px;
     font-family: 'orbitron';
+}
+
+.container .date-container{
+
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+footer{
+    display: flex;
+
 }
