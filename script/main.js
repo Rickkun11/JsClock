@@ -28,9 +28,9 @@ let clockWork = () => {
     let day = weekday[d.getDay()];
 
     //display all date format to DOM
-    let displayDate = day +" "+ getDate.getDay()+"/"+getDate.getMonth()+"/"+getDate.getFullYear();
+    const options = {  day: 'numeric', month: 'numeric', year: 'numeric'};
+    let displayDate = day +" "+ getDate.toLocaleDateString("id-GB",options);
     dateFormater.innerHTML = displayDate;
-
 
 }
 setInterval(clockWork,10);
